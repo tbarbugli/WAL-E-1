@@ -275,7 +275,7 @@ def main(argv=None):
         aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
         if aws_access_key_id is None:
             logger.error(
-                msg='no storage prefix defined',
+                msg='no AWS_ACCESS_KEY_ID defined',
                 hint=('Either set the --aws-access-key-id option or define '
                       'the environment variable AWS_ACCESS_KEY_ID.'))
             sys.exit(1)
